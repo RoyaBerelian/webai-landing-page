@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="style/output.css">
+</head>
+
+<body class="bg-default-900" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <div id="root">
+        <div>
+            <!-- background gradient -->
+            <div class="fixed top-0 -z-10"><div class="bg-gradient-blur"></div></div>
+            <div class="fixed top-0 right-0 -z-10"><div class="bg-gradient-blur"></div></div>
+            <div class="fixed flex inset-0 items-center justify-center -z-10"><div class="bg-gradient-blur"></div></div>
+            <div class="fixed bottom-0 left-0 -z-10"><div class="bg-gradient-blur"></div></div>
+            <div class="fixed bottom-0 right-0 -z-10"><div class="bg-gradient-blur"></div></div>
+        </div>
+        <!-- ***header*** -->
+        <header id="navbar" class="fixed navbar-sticky right-0 left-0 bg-transparent top-0 z-40 w-full overflow-hidden">
+            <div class="w-full mx-auto px-4 sm:px-8 lg:px-16 xl:px-20">
+                <nav class="flex lg:flex-nowrap items-center justify-between py-4">
+                    <img class="h-10" src="image/imgi_34_logo.png" loading="lazy" alt="">
+                    <!-- hamburger menu -->
+                    <div class="ms-auto flex items-center px-2.5 lg:hidden">
+                        <button
+                            class="inline-flex justify-center items-center h-9 w-12 rounded-md border border-white/20 border-solid bg-default-100/5 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                aria-hidden="true" role="img" class="iconify iconify--lucide h-5 w-5 stroke-white"
+                                width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M4 5h16M4 12h16M4 19h16">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- menu -->
+                    <div class="mx-auto mt-2 basis-full grow items-center justify-center hidden lg:mt-0 lg:flex lg:basis-auto ">
+                        <ul class="flex-row flex gap-4 items-center li-style menu">
+                            <li class=" is-active">Home</li>
+                            <li class="">Categories</li>
+                            <li class="">Sellers</li>
+                            <li class="">Showcase</li>
+                            <li class="">Faq</li>
+                            <li class="">Blog</li>
+                        </ul>
+                    </div>
+                    <!-- button download -->
+                    <div class="hidden items-center lg:flex">
+                        <a href=""
+                            class="inline-flex items-center justify-center bg-primary-500 px-6 py-2 gap-2 rounded-full text-white transition-all duration-300 ease-in-out cursor-pointer hover:bg-primary-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                aria-hidden="true" role="img" class="iconify iconify--lucide me-2 h-5 w-5" width="1em"
+                                height="1em" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M15 11a1 1 0 0 0 1 1h2.939a1 1 0 0 1 .75 1.811l-6.835 6.836a1.207 1.207 0 0 1-1.707 0L4.31 13.81a1 1 0 0 1 .75-1.811H8a1 1 0 0 0 1-1V9a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1zM9 4h6">
+                                </path>
+                            </svg>
+                            Download
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- *** Section Home **** -->
+        <section id="home" class="relative overflow-hidden pt-[74px]">
+            <div class="w-full relative overflow-hidden md:px-3 lg:px-10">
+                <div class="bg-default-950/40 py-[74px] md:rounded-lg lg:py-24 backdrop-blur-3xl shadow">
+                    <div class="page-container relative">
+                        <div class="absolute top-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="badge" class="lucide lucide-badge h-12 w-12 animate-[spin_10s_linear_infinite] fill-primary-500/20 text-transparent"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path></svg>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-12 items-center gap-[30px]">
+                            <div class="md:col-span-7" data-aos="fade-right">
+                                <div class="me-6">
+                                    <span class="mb-6 inline-flex items-center gap-1.5 bg-primary-500/20 px-3 py-1.5 text-sm font-medium text-primary-500 rounded-full">
+                                        <span class="inline-block w-2 h-2 rounded-full bg-primary-500"></span>
+                                        Collect NFTs
+                                    </span>
+                                    <h4 class="mb-4 text-4xl/tight font-semibold capitalize text-white lg:text-6xl/tight">
+                                        <span class="bg-gradient-to-r from-primary-500 to-red-600 bg-clip-text text-transparent ">Discover & collect</span>
+                                        the best NFTs digital art
+                                    </h4>
+                                    <p class="mb-6 max-w-xl text-lg text-default-200 ">We are a huge marketplace dedicated to connecting great artists of all NFT with their fans and unique token collectors!</p>
+                                    <div>
+                                        <a href="" class="btn btn-primary rounded-lg">Explore Now</a>
+                                        <a href="" class="btn btn-transparent rounded-lg ">Sell Now
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--mdi text-xl leading-[0]" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m11.93 5l2.83 2.83L5 17.59L6.42 19l9.76-9.75L19 12.07V5z"></path></svg>
+                                        </a>
+                                    </div>
+                                    
+
+                                </div>
+
+                            </div>
